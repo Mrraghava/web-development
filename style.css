@@ -1,0 +1,447 @@
+/* =========================
+   NAVBAR
+   ========================= */
+   .navbar {
+    /* gradient background */
+    background: linear-gradient(135deg, #1f1c2c 0%, #928dab 100%);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    align-items: center;
+    display: flex;
+  }
+  
+  /* Logo */
+  .navbar .logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  .navbar .logo:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Site title */
+  .navbar h1 {
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    color: #fff;
+    margin-right: auto;
+  }
+  
+  /* Nav list reset */
+  .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+  }
+  
+  /* Nav items as clickable links */
+  .navbar .nav-item {
+    position: relative;
+    cursor: pointer;
+    color: rgba(255,255,255,0.85);
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  .navbar .nav-item:hover {
+    color: #fff;
+  }
+  
+  /* Underline-on-hover effect */
+  .navbar .nav-item::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+  }
+  .navbar .nav-item:hover::after {
+    left: 0;
+    width: 100%;
+  }
+  
+  /* Search box container */
+  .navbar .form-control-sm {
+    border-radius: 20px;
+    border: none;
+    padding: 0.4rem 0.8rem;
+    transition: box-shadow 0.3s ease;
+  }
+  .navbar .form-control-sm:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(255,255,255,0.7);
+  }
+  
+  /* Search button */
+  .navbar .btn-light {
+    border-radius: 20px;
+    padding: 0.4rem 0.8rem;
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  .navbar .btn-light:hover {
+    background: rgba(255,255,255,0.9);
+    transform: scale(1.05);
+  }
+  
+  /* Responsive tweak: collapse gap on smaller screens */
+  @media (max-width: 768px) {
+    .navbar ul {
+      gap: 1rem;
+    }
+    .navbar h1 {
+      font-size: 1.2rem;
+    }
+  }
+  
+
+
+
+  
+
+
+.into{
+    font-size: 100px;
+    
+}
+.s2{
+   display: flex;
+   gap: 5px;
+   
+}
+.movies{
+    display: flex;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    gap: 5px;
+    margin-top: 95px;      
+}
+.movies:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.section1{
+    width: 100%;
+    height: 500px;
+    
+}
+.s3{
+    
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    margin-top: 80px;
+}
+.series{
+    display: flex;
+    gap: 5px;
+    width: 100%;
+    height: 500px;
+            
+}
+.s3:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.section4{
+    width: 100%;
+    height: 500px;
+}
+body{
+    background-image: url(https://static1.makeuseofimages.com/wordpress/wp-content/uploads/2021/06/24.-Superman.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.animepic{
+    display: flex;
+    height: 350px;
+    width: 250px;
+    object-fit: cover;
+    gap: 15px;
+    margin-top: 70px;     
+}
+.s4:hover{
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+.ani{
+    margin-top: -60px;
+    position: absolute;
+    margin-left: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-left p {
+    margin: 0;
+}
+
+.footer-middle ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.footer-middle ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-right ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-right ul li a:hover {
+    text-decoration: underline;
+}
+
+.section5{
+    width: auto;
+    height: 500px;
+    
+}
+.upper{
+    position: absolute;
+    margin-top: 33px;
+    margin-left: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.ser{
+    position: absolute;
+    margin-top: 13px;
+    margin-left: 25px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+   footer {
+    background-color: #1f1c2c;
+    color: #ddd;
+    padding: 2rem 0;
+    font-size: 0.95rem;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+  
+  .footer-left,
+  .footer-middle,
+  .footer-right {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-left h5,
+  .footer-middle h5,
+  .footer-right h5 {
+    color: #fff;
+    margin-bottom: 0.75rem;
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .footer-left p {
+    line-height: 1.6;
+  }
+  
+  .footer-middle ul,
+  .footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-middle ul li,
+  .footer-right ul li {
+    margin-bottom: 0.5rem;
+  }
+  
+  .footer-middle ul li a,
+  .footer-right ul li a {
+    color: #bbb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-middle ul li a:hover,
+  .footer-right ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    text-align: center;
+    color: #888;
+  }
+  
+  @media (max-width: 768px) {
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+    .footer-left,
+    .footer-middle,
+    .footer-right {
+      margin-bottom: 1.5rem;
+    }
+  }
+  
+
+  /* -------------------------
+   Global Fluid Images
+   ------------------------- */
+.movies, .s3, .s4 {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+  }
+  
+  /* -------------------------
+     Large desktops → tablets
+     ------------------------- */
+  @media (max-width: 1200px) {
+    .section1, .section4, .section5 {
+      padding: 2rem 1rem;
+    }
+  
+    .s2, .series, .animepic {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  
+    .upper, .ser, .ani {
+      position: relative;
+      margin: 1rem 0;
+    }
+  }
+  
+  /* -------------------------
+     Tablets (≤992px)
+     ------------------------- */
+  @media (max-width: 992px) {
+    .movies, .s3, .s4 {
+      max-width: 200px;
+    }
+  
+    .navbar h1 {
+      font-size: 1.3rem;
+    }
+  
+    .navbar .logo {
+      height: 40px;
+      width: 40px;
+    }
+  
+    /* Stack nav items if they overflow */
+    .navbar ul {
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+  }
+  
+  /* -------------------------
+     Small tablets / large phones (≤768px)
+     ------------------------- */
+  @media (max-width: 768px) {
+    /* Navbar becomes vertical-ish */
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 1rem;
+    }
+  
+    .navbar ul {
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 0.5rem 0;
+    }
+  
+    .navbar .form-control-sm,
+    .navbar .btn-light {
+      width: 100%;
+      margin-bottom: 0.5rem;
+    }
+  
+    /* Section headings flow normally */
+    .upper, .ser, .ani {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  
+    /* Flex grids wrap into two columns */
+    .s2, .series, .animepic {
+      gap: 1rem;
+    }
+  }
+  
+  /* -------------------------
+     Phones (≤576px)
+     ------------------------- */
+  @media (max-width: 576px) {
+    /* Single‑column layout everywhere */
+    .s2, .series, .animepic {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .movies, .s3, .s4 {
+      max-width: 100%;
+    }
+  
+    /* Footer stacks */
+    .footer-content {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    /* Tighter spacing */
+    .section1, .section4, .section5 {
+      padding: 1rem 0.5rem;
+    }
+  }
+  
